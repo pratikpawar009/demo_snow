@@ -79,7 +79,7 @@ def get_provider(provider_id: int):
     """
     Get one provider
     ---
-    tags:
+  tags:
       - Providers
     parameters:
       - in: path
@@ -170,5 +170,5 @@ def delete_provider(provider_id: int):
     if provider_id not in llm_providers:
         return jsonify({"error": "Not found"}), 404
 
-    del llm_providers[provider_id]
+    de llm_providers[provider_id]
     return jsonify({"message": "Deleted successfully"}), 200
